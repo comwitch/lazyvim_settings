@@ -6,3 +6,20 @@ debug
 foo.*
 *.log
 data
+
+# swap / backup
+*.swp
+*.swo
+*~
+.backup/
+
+# local/session files
+.__vimsession
+Session.vim
+
+# OS files
+.DS_Store
+
+# local env / secrets
+.env
+.env.*
