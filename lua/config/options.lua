@@ -32,11 +32,11 @@ vim.opt.clipboard = "unnamedplus"
 -- backup / swap directory
 vim.opt.backupdir = { "./.backup", ".", "/tmp" }
 vim.opt.directory = { ".", "./.backup", "/tmp" }
-
+vim.opt.number = true
+vim.opt.relativenumber = false
 vim.diagnostic.config({
   virtual_text = false,
   signs = false,
-  underline = false,
 })
 -- grep
 vim.opt.grepprg = "gitv grep"

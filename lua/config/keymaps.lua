@@ -136,3 +136,7 @@ end, { desc = "Debug focus current frame" })
 vim.keymap.set("n", "<leader>dq", function()
   require("dap").terminate()
 end, { desc = "Debug terminate" })
+
+vim.keymap.set("n", "<leader>uh", "<cmd>windo normal! 0zs<CR>", {
+  desc = "Reset horizontal scroll",
+})
