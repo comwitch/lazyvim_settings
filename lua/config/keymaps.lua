@@ -128,3 +128,7 @@ end, { desc = "Run last debug" })
 keymap("n", "<leader>du", function()
   require("dapui").toggle()
 end, { desc = "Toggle debug UI" })
+
+vim.keymap.set("n", "<leader>df", function()
+  require("dap").focus_frame()
+end, { desc = "Debug focus current frame" })
