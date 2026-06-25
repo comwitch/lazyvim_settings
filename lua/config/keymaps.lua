@@ -71,28 +71,6 @@ end
 
 keymap("n", "<leader>w", toggle_wrap, { desc = "Toggle wrap" })
 
--- gitv main picker
-keymap("n", "<leader>gv", "<cmd>Telescope gitv<CR>", {
-  desc = "Gitv",
-})
-
--- gitv files
-keymap("n", "<leader>gf", function()
-  require("telescope").extensions.gitv.gitv_files()
-end, {
-  desc = "Gitv files",
-})
-
--- gitv search current word
-keymap("n", "<leader>gw", function()
-  local word = vim.fn.expand("<cword>")
-  require("telescope").extensions.gitv.gitv({
-    key = "^" .. word .. "$",
-  })
-end, {
-  desc = "Gitv current word",
-})
-
 keymap("n", "<F5>", function()
   require("dap").continue()
 end, { desc = "Debug continue" })

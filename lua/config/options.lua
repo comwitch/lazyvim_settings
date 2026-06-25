@@ -8,7 +8,7 @@
 vim.opt.number = true
 
 -- search
-vim.opt.ignorecase = true
+vim.opt.ignorecase = false
 
 -- tab / indent
 vim.opt.tabstop = 4
@@ -39,4 +39,6 @@ vim.diagnostic.config({
   signs = false,
 })
 -- grep
+--
+vim.g.ai_cmp = false
 vim.opt.grepprg = "gitv grep"
