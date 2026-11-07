@@ -42,3 +42,4 @@ vim.diagnostic.config({
 --
 vim.g.ai_cmp = false
 vim.opt.grepprg = "gitv grep"
+vim.g.autoformat = false
