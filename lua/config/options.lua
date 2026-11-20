@@ -28,6 +28,7 @@ vim.opt.foldlevel = 1
 -- clipboard
 -- macOS에서도 보통 unnamedplus가 잘 동작함
 vim.opt.clipboard = "unnamedplus"
+vim.g.clipboard = "osc52"
 
 -- backup / swap directory
 vim.opt.backupdir = { "./.backup", ".", "/tmp" }
